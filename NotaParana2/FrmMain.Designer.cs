@@ -32,15 +32,15 @@
             this.arquivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lugaresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listagemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sorteiosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.relatórioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.relatórioAnualToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.associarNomesCPFsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.motoristasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.importarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pMDIForm = new System.Windows.Forms.Panel();
-            this.relatórioAnualToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sorteiosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -84,12 +84,29 @@
             this.listagemToolStripMenuItem.Text = "Listagem";
             this.listagemToolStripMenuItem.Click += new System.EventHandler(this.listagemToolStripMenuItem_Click);
             // 
+            // sorteiosToolStripMenuItem
+            // 
+            this.sorteiosToolStripMenuItem.Name = "sorteiosToolStripMenuItem";
+            this.sorteiosToolStripMenuItem.Size = new System.Drawing.Size(190, 24);
+            this.sorteiosToolStripMenuItem.Text = "Sorteios";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(187, 6);
+            // 
             // relatórioToolStripMenuItem
             // 
             this.relatórioToolStripMenuItem.Name = "relatórioToolStripMenuItem";
             this.relatórioToolStripMenuItem.Size = new System.Drawing.Size(190, 24);
             this.relatórioToolStripMenuItem.Text = "Relatório Mensal";
             this.relatórioToolStripMenuItem.Click += new System.EventHandler(this.relatórioToolStripMenuItem_Click);
+            // 
+            // relatórioAnualToolStripMenuItem
+            // 
+            this.relatórioAnualToolStripMenuItem.Name = "relatórioAnualToolStripMenuItem";
+            this.relatórioAnualToolStripMenuItem.Size = new System.Drawing.Size(190, 24);
+            this.relatórioAnualToolStripMenuItem.Text = "Relatório Anual";
             // 
             // editarToolStripMenuItem
             // 
@@ -129,23 +146,6 @@
             this.pMDIForm.Size = new System.Drawing.Size(972, 594);
             this.pMDIForm.TabIndex = 1;
             // 
-            // relatórioAnualToolStripMenuItem
-            // 
-            this.relatórioAnualToolStripMenuItem.Name = "relatórioAnualToolStripMenuItem";
-            this.relatórioAnualToolStripMenuItem.Size = new System.Drawing.Size(190, 24);
-            this.relatórioAnualToolStripMenuItem.Text = "Relatório Anual";
-            // 
-            // sorteiosToolStripMenuItem
-            // 
-            this.sorteiosToolStripMenuItem.Name = "sorteiosToolStripMenuItem";
-            this.sorteiosToolStripMenuItem.Size = new System.Drawing.Size(190, 24);
-            this.sorteiosToolStripMenuItem.Text = "Sorteios";
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(187, 6);
-            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -159,6 +159,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nota Paraná 2.0";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmMain_FormClosed);
+            this.Load += new System.EventHandler(this.FrmMain_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

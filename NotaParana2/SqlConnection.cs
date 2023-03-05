@@ -10,9 +10,9 @@ namespace NotaParana2
     public class SqlConnection
     {
         public SQLiteConnection connection;
-        public SqlConnection()
+        public SqlConnection(string PATH)
         {
-            connection = new SQLiteConnection("Data Source=data.db");
+            connection = new SQLiteConnection("Data Source=" + PATH);
         }
         public void Connect()
         {
