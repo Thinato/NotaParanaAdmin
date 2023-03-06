@@ -138,7 +138,7 @@ namespace NotaParana2
                             int c = Convert.ToInt32(cmd.ExecuteScalar());
                             if (c == 0)
                             {
-                                cmd.CommandText = $"insert or ignore into lugar (cnpj, nome, motorista) values ('{split[0]}', '{split[1]}', 1)";
+                                cmd.CommandText = $"insert into lugar (cnpj, nome, motorista) values ('{split[0]}', '{split[1]}', 1)";
                                 cmd.ExecuteNonQuery();
                             }
                             cmd.CommandText = $"select count(*) from nota_lugar where cnpj='{split[0]}' and nota='{split[2]}' ";
