@@ -45,6 +45,7 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.cmbChart = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.gbMotoristas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgMotoristas)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -216,6 +217,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.cmbChart);
             this.panel1.Controls.Add(this.chart1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -230,11 +232,19 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbChart.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbChart.FormattingEnabled = true;
-            this.cmbChart.Location = new System.Drawing.Point(4, 219);
+            this.cmbChart.Location = new System.Drawing.Point(69, 219);
             this.cmbChart.Name = "cmbChart";
-            this.cmbChart.Size = new System.Drawing.Size(395, 28);
+            this.cmbChart.Size = new System.Drawing.Size(330, 28);
             this.cmbChart.TabIndex = 5;
             this.cmbChart.SelectedIndexChanged += new System.EventHandler(this.cmbChart_SelectedIndexChanged);
+            // 
+            // label2
+            // 
+            this.label2.Location = new System.Drawing.Point(3, 222);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(60, 23);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Gráfico:";
             // 
             // FrmRelatorioMensal
             // 
@@ -279,5 +289,6 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ComboBox cmbChart;
+        private System.Windows.Forms.Label label2;
     }
 }
